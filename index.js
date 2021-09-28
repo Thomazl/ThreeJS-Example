@@ -13,9 +13,10 @@ scene.background =new THREE.Color(0x000000);
 
 
 const loader = new GLTFLoader()
-loader.load('assets/pote3D-1.gltf', function (gltf) {
-    console.log(gltf)
-    const root = gltf.scene;
+// loader.load('assets/pote3D-1.gltf', function (gltf) {
+loader.load('assets/pote3d.glb', function (glb) {
+    console.log(glb)
+    const root = glb.scene;
     root.scale.set(1, 1, 1)
     scene.add(root)
 }, function (xhr) {
@@ -24,11 +25,15 @@ loader.load('assets/pote3D-1.gltf', function (gltf) {
     console.log('Error loading')
 })
 
-const light = new THREE.HemisphereLight(0xffffff, 1, 1)
-light.position.set(10, 1, 100, 100);
-// light.intensity.set(1)
-// light.color.set('0xffffff')
+
+
+
+const light = new THREE.HemisphereLight(0xffffff, "rgba(107, 107, 107)", 1)
+light.position.set(10, 10, 0);
 scene.add(light)
+const lamp = new THREE.AmbientLight(0xffffff, .3)
+lamp.position.set(0, 10, -4);
+scene.add(lamp)
 
 
 const targetObject = new THREE.Object3D();
@@ -44,9 +49,10 @@ const sizes = {
 }
 const camera = new THREE.PerspectiveCamera(75, sizes.width/sizes.height, 0.1, 100)
 // camera.position.set(.2, 5, 10)
-camera.position.z = 5;
+camera.position.z = -8;
 camera.position.x = 0;
 camera.position.y = 1;
+camera.rotation.z = .2;
 scene.add(camera)
 
 const controls = new OrbitControls(camera, canvas)
