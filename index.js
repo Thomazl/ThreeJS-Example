@@ -5,17 +5,17 @@ import {OrbitControls} from './three.js-master/examples/jsm/controls/OrbitContro
 
 const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
-const texture = new THREE.TextureLoader().load( "assets/disney.jpg" );
-texture.wrapS = THREE.RepeatWrapping;
-texture.wrapT = THREE.RepeatWrapping;
+// const texture = new THREE.TextureLoader().load( "assets/disney.jpg" );
+// texture.wrapS = THREE.RepeatWrapping;
+// texture.wrapT = THREE.RepeatWrapping;
 // texture.repeat.set(  );
-scene.background = texture;
+scene.background =new THREE.Color(0x000000);
 
 
 const loader = new GLTFLoader()
-loader.load('assets/pote3D.glb', function (glb) {
-    console.log(glb)
-    const root = glb.scene;
+loader.load('assets/pote3D-1.gltf', function (gltf) {
+    console.log(gltf)
+    const root = gltf.scene;
     root.scale.set(1, 1, 1)
     scene.add(root)
 }, function (xhr) {
@@ -24,9 +24,17 @@ loader.load('assets/pote3D.glb', function (glb) {
     console.log('Error loading')
 })
 
-const light = new THREE.DirectionalLight( 0xffffff)
-light.position.set(10, 10, 10, 15)
+const light = new THREE.HemisphereLight(0xffffff, 1, 1)
+light.position.set(10, 1, 100, 100);
+// light.intensity.set(1)
+// light.color.set('0xffffff')
 scene.add(light)
+
+
+const targetObject = new THREE.Object3D();
+scene.add(targetObject);
+
+light.target = targetObject;
 
 
 //Boiler plate code
@@ -36,14 +44,15 @@ const sizes = {
 }
 const camera = new THREE.PerspectiveCamera(75, sizes.width/sizes.height, 0.1, 100)
 // camera.position.set(.2, 5, 10)
-camera.position.z = 20;
-camera.position.x = 1;
-camera.position.y = 5;
+camera.position.z = 5;
+camera.position.x = 0;
+camera.position.y = 1;
 scene.add(camera)
 
 const controls = new OrbitControls(camera, canvas)
  controls.enableZoom = true;
  controls.enableDamping = false;
+
 
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas,

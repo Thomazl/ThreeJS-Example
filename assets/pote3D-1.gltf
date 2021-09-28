@@ -1,0 +1,533 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v1.6.16",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "BezierCurve",
+      "rotation": [
+        0,
+        -0.9011743664741516,
+        0,
+        0.43345680832862854
+      ],
+      "scale": [
+        0.9363863468170166,
+        0.16690362989902496,
+        0.9439038634300232
+      ],
+      "translation": [
+        -0.0055446624755859375,
+        1.3345041275024414,
+        0.0022468864917755127
+      ]
+    },
+    {
+      "name": "Empty.001",
+      "rotation": [
+        0,
+        -0.712830662727356,
+        0,
+        0.7013362050056458
+      ]
+    },
+    {
+      "children": [
+        1
+      ],
+      "mesh": 1,
+      "name": "Circle.004",
+      "rotation": [
+        0,
+        0.008127785287797451,
+        0,
+        0.9999669790267944
+      ],
+      "scale": [
+        0.9825727343559265,
+        0.9825725555419922,
+        0.9825727343559265
+      ],
+      "translation": [
+        -0.003515481948852539,
+        1.5687365531921387,
+        0.00019282102584838867
+      ]
+    },
+    {
+      "mesh": 2,
+      "name": "Rotulo",
+      "rotation": [
+        0,
+        0.008127790875732899,
+        0,
+        0.9999669790267944
+      ],
+      "scale": [
+        0.9983494877815247,
+        0.9983494281768799,
+        0.9983494877815247
+      ],
+      "translation": [
+        -0.0005737543106079102,
+        -0.5663561820983887,
+        -0.09547486901283264
+      ]
+    },
+    {
+      "children": [
+        0,
+        2,
+        3
+      ],
+      "mesh": 3,
+      "name": "Circle.002"
+    },
+    {
+      "name": "Area",
+      "rotation": [
+        0.3002503514289856,
+        -0.10371449589729309,
+        0.41676703095436096,
+        0.8517031669616699
+      ],
+      "scale": [
+        10.050179481506348,
+        10.050179481506348,
+        10.050179481506348
+      ]
+    },
+    {
+      "name": "Area.001",
+      "rotation": [
+        0.4138683080673218,
+        0.3595297038555145,
+        -0.2978185713291168,
+        0.7815084457397461
+      ],
+      "scale": [
+        10.050179481506348,
+        10.050179481506348,
+        10.050179481506348
+      ],
+      "translation": [
+        12.47848129272461,
+        12.202852249145508,
+        8.219657897949219
+      ]
+    },
+    {
+      "name": "Area.003",
+      "rotation": [
+        -0.41185712814331055,
+        0.4251565933227539,
+        -0.2396891862154007,
+        0.7695223689079285
+      ],
+      "scale": [
+        9.30801010131836,
+        9.30801010131836,
+        9.30801010131836
+      ],
+      "translation": [
+        -0.7672303915023804,
+        14.086471557617188,
+        -17.11685562133789
+      ]
+    },
+    {
+      "name": "Camera_Orientation"
+    },
+    {
+      "children": [
+        8
+      ],
+      "name": "Camera.001",
+      "rotation": [
+        0.6797804236412048,
+        0.03930114582180977,
+        -0.03652163967490196,
+        0.7314507365226746
+      ],
+      "translation": [
+        -0.8108184337615967,
+        4.566651344299316,
+        11.535277366638184
+      ]
+    },
+    {
+      "name": "Light",
+      "rotation": [
+        0.16907575726509094,
+        0.7558803558349609,
+        -0.27217137813568115,
+        0.570947527885437
+      ],
+      "translation": [
+        4.076245307922363,
+        5.903861999511719,
+        -1.0054539442062378
+      ]
+    },
+    {
+      "name": "Camera",
+      "rotation": [
+        0.483536034822464,
+        0.33687159419059753,
+        -0.20870360732078552,
+        0.7804827094078064
+      ],
+      "translation": [
+        7.358891487121582,
+        4.958309173583984,
+        6.925790786743164
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Base",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.125
+      }
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "name": "Rotulo",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.5,
+        "roughnessFactor": 0.4733957350254059
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "BezierCurve",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3
+        }
+      ]
+    },
+    {
+      "name": "Circle.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Circle.002",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "name": "Circle.006",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "name": "pote3D-gtlf_img0",
+      "uri": "pote3D-1_img0.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 2892,
+      "max": [
+        1.1770728826522827,
+        1.9733597040176392,
+        1.1873608827590942
+      ],
+      "min": [
+        -1.1876213550567627,
+        -0.23405680060386658,
+        -1.1873608827590942
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2892,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2892,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 9492,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 914987,
+      "max": [
+        1.180478811264038,
+        0.39579105377197266,
+        1.180458903312683
+      ],
+      "min": [
+        -1.1804691553115845,
+        -0.3481844961643219,
+        -1.18047297000885
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 914987,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 914987,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5125,
+      "count": 2521680,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 479,
+      "max": [
+        1.2988312244415283,
+        1.0392735004425049,
+        1.3907910585403442
+      ],
+      "min": [
+        -1.2859361171722412,
+        -1.5168819427490234,
+        -1.193976640701294
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 479,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 479,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 1836,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 12,
+      "componentType": 5126,
+      "count": 7097,
+      "max": [
+        1.272340178489685,
+        1.7716389894485474,
+        1.2859961986541748
+      ],
+      "min": [
+        -1.272340178489685,
+        -2.577683687210083,
+        -1.2859961986541748
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 13,
+      "componentType": 5126,
+      "count": 7097,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 14,
+      "componentType": 5126,
+      "count": 7097,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 15,
+      "componentType": 5123,
+      "count": 37509,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 34704,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 34704,
+      "byteOffset": 34704
+    },
+    {
+      "buffer": 0,
+      "byteLength": 23136,
+      "byteOffset": 69408
+    },
+    {
+      "buffer": 0,
+      "byteLength": 18984,
+      "byteOffset": 92544
+    },
+    {
+      "buffer": 0,
+      "byteLength": 10979844,
+      "byteOffset": 111528
+    },
+    {
+      "buffer": 0,
+      "byteLength": 10979844,
+      "byteOffset": 11091372
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7319896,
+      "byteOffset": 22071216
+    },
+    {
+      "buffer": 0,
+      "byteLength": 10086720,
+      "byteOffset": 29391112
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5748,
+      "byteOffset": 39477832
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5748,
+      "byteOffset": 39483580
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3832,
+      "byteOffset": 39489328
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3672,
+      "byteOffset": 39493160
+    },
+    {
+      "buffer": 0,
+      "byteLength": 85164,
+      "byteOffset": 39496832
+    },
+    {
+      "buffer": 0,
+      "byteLength": 85164,
+      "byteOffset": 39581996
+    },
+    {
+      "buffer": 0,
+      "byteLength": 56776,
+      "byteOffset": 39667160
+    },
+    {
+      "buffer": 0,
+      "byteLength": 75020,
+      "byteOffset": 39723936
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "pote3D-1_data.bin",
+      "byteLength": 39798956
+    }
+  ]
+}
