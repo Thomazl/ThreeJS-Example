@@ -28,10 +28,10 @@ loader.load('assets/pote3D-1.gltf', function (gltf) {
 
 
 const light = new THREE.HemisphereLight(0xffffff, "rgba(107, 107, 107)", 1)
-light.position.set(10, 10, 0);
+light.position.set(5, 5, 0);
 scene.add(light)
 const lamp = new THREE.AmbientLight(0xffffff, .3)
-lamp.position.set(0, 10, -4);
+lamp.position.set(0, 2, -4);
 scene.add(lamp)
 
 
