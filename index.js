@@ -9,7 +9,7 @@ const scene = new THREE.Scene()
 // texture.wrapS = THREE.RepeatWrapping;
 // texture.wrapT = THREE.RepeatWrapping;
 // texture.repeat.set(  );
-scene.background =new THREE.Color(0x000000);
+scene.background =new THREE.Color("rgba(128, 128, 128)");
 
 
 const loader = new GLTFLoader()
@@ -17,6 +17,7 @@ loader.load('assets/pote3D-1.gltf', function (gltf) {
     console.log(gltf)
     const root = gltf.scene;
     root.scale.set(1, 1, 1)
+    root.position.set(-10, 0, 10)
     scene.add(root)
 }, function (xhr) {
     console.log((xhr.loaded/xhr.total * 100) + '% loaded')
