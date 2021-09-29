@@ -67,7 +67,7 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 renderer.shadowMap = true
-// renderer.gammaOutput = true
+renderer.gammaOutput = true
 
 window.addEventListener('resize', function(){
     renderer.setSize(window.innerWidth, window.innerHeight);
