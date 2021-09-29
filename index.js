@@ -13,10 +13,9 @@ scene.background =new THREE.Color(0x000000);
 
 
 const loader = new GLTFLoader()
-// loader.load('assets/pote3D-1.gltf', function (gltf) {
-loader.load('assets/pote3d.glb', function (glb) {
-    console.log(glb)
-    const root = glb.scene;
+loader.load('assets/pote3D-1.gltf', function (gltf) {
+    console.log(gltf)
+    const root = gltf.scene;
     root.scale.set(1, 1, 1)
     scene.add(root)
 }, function (xhr) {
