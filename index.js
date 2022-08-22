@@ -1,23 +1,19 @@
 import * as THREE from './three.js-master/build/three.module.js'
 import {GLTFLoader} from './three.js-master/examples/jsm/loaders/GLTFLoader.js'
 import {OrbitControls} from './three.js-master/examples/jsm/controls/OrbitControls.js'
-// console.log(THREE)
+
 
 const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
-// const texture = new THREE.TextureLoader().load( "assets/disney.jpg" );
-// texture.wrapS = THREE.RepeatWrapping;
-// texture.wrapT = THREE.RepeatWrapping;
-// texture.repeat.set(  );
 scene.background =new THREE.Color("rgba(128, 128, 128)");
 
 
 const loader = new GLTFLoader()
-loader.load('assets/pote3D-1.gltf', function (gltf) {
+loader.load('assets/base.gltf', function (gltf) {
     console.log(gltf)
     const root = gltf.scene;
-    root.scale.set(1, 1, 1)
-    root.position.set(-10, 0, 10)
+    root.scale.set(100, 100, 100)
+    root.position.set(1, -10, 10)
     scene.add(root)
 }, function (xhr) {
     console.log((xhr.loaded/xhr.total * 100) + '% loaded')
@@ -76,19 +72,14 @@ window.addEventListener('resize', function(){
     camera.update()
 })
 
-function animate(){
+function animate() {
     requestAnimationFrame(animate);
+  
+    camera.rotation.z += 0.01;
+  
+  
     renderer.render(scene, camera);
-    controls.update()
-}
+  }
+  
+  animate();
 
-animate()
-
-
-// const tick = () => {
-//     // renderer.render(scene, camera)
-//     window.requestAnimationFrame(tick)
-//     controls.update()
-// }
-
-// tick()
